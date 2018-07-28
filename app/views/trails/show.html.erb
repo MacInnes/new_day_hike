@@ -1,0 +1,11 @@
+<%= @trail.name %>
+<%= @trail.address %>
+<%= @trail.length %>
+
+Trips:
+
+<% @trail.trips.each do |trip| %>
+  <%= trip.name %>
+<% end %>
+
+Total trips: <%= @trail.total_trips %>
